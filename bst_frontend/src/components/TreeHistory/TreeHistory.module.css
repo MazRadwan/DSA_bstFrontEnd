@@ -1,21 +1,10 @@
-.container {
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 10px;
+  grid-template-columns: 1fr; /* Changed from 2 columns to 1 */
+  gap: 30px; /* Increased gap for better separation */
+  padding: 20px;
+  max-width: 1200px; /* Max width to maintain readability */
+  margin: 0 auto;
 }
 
 .card {
@@ -24,10 +13,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .cardHeader {
@@ -48,19 +33,11 @@
 }
 
 .treeContainer {
-  min-height: 200px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f8f9fa;
   border-radius: 4px;
   padding: 10px;
-}
-
-.error {
-  color: #e74c3c;
-  padding: 10px;
-  border-radius: 4px;
-  background: #fde8e8;
-  margin-bottom: 20px;
 }

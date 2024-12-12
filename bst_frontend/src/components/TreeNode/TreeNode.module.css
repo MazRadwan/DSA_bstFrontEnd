@@ -1,40 +1,34 @@
-.nodeContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+/* TreeNode.module.css */
+.treeContainer {
   position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.node {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #4a90e2;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  position: relative;
-  z-index: 2;
+.svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
-.children {
-  display: flex;
-  gap: 20px;
-  padding-top: 20px;
-  position: relative;
+.nodeCircle {
+  transition: fill 0.3s ease;
 }
 
-.children::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 25px;
-  right: 25px;
-  height: 20px;
-  border-left: 2px solid #4a90e2;
-  border-right: 2px solid #4a90e2;
-  border-top: 2px solid #4a90e2;
+.nodeCircle:hover {
+  fill: #2171d1;
+}
+
+.connection {
+  transition: stroke 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .treeContainer {
+    height: 300px;
+  }
 }
