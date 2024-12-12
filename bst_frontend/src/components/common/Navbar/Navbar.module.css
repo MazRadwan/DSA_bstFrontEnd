@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #333;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #4a90e2;
+}
