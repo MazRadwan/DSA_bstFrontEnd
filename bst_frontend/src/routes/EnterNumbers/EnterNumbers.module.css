@@ -1,11 +1,29 @@
+/* EnterNumbers.module.css */
 .container {
-  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.headerSection {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .title {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+}
+
+.visualizerSection {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

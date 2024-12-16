@@ -1,3 +1,4 @@
+// BinarySearchTree.jsx
 import { useState } from "react";
 import TreeNode from "../TreeNode/TreeNode";
 import { treeService } from "../../services/treeService";
@@ -36,8 +37,9 @@ const BinarySearchTree = () => {
             type="text"
             value={numbers}
             onChange={(e) => setNumbers(e.target.value)}
-            placeholder="Enter numbers (e.g., 5,3,7,1,9)"
+            placeholder="Enter numbers separated by commas (e.g., 5,3,7,1,9)"
             className={styles.input}
+            aria-label="Enter numbers"
           />
           <button type="submit" className={styles.button}>
             Create Tree
@@ -47,7 +49,13 @@ const BinarySearchTree = () => {
       </form>
 
       <div className={styles.treeContainer}>
-        {treeData && <TreeNode {...JSON.parse(treeData.treeStructure)} />}
+        {treeData ? (
+          <TreeNode {...JSON.parse(treeData.treeStructure)} />
+        ) : (
+          <p className={styles.placeholder}>
+            Enter numbers to visualize the tree
+          </p>
+        )}
       </div>
     </div>
   );
